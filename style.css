@@ -1,0 +1,23 @@
+img {
+    width:20%;
+    height:20%;
+}
+
+.result {
+    display: table;
+}
+
+h1 {
+    margin-bottom: 4rem;
+}
+
+body {
+    text-align: center;
+  }
+
+h4 {
+    background-color: #333;
+    color: white;
+
+}
+

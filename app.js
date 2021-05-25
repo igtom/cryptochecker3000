@@ -10,11 +10,14 @@ async function getCoins() {
         const nameElement = document.createElement('h2');
         const priceElement = document.createElement('h4');
         imageElement.src = coin.logo_url
-        nameElement.innerHTML = coin.name
+        nameElement.innerHTML = `${coin.name} (${coin.id})`
         priceElement.innerHTML = `${parseFloat(coin.price).toFixed(2)}€`
-        result.appendChild(imageElement)
-        result.appendChild(nameElement)
-        result.appendChild(priceElement)
+        const output = document.createElement('div')
+        output.setAttribute('class', 'row')
+        result.appendChild(output)
+        output.appendChild(imageElement)
+        output.appendChild(nameElement)
+        output.appendChild(priceElement)
     })
 }
 

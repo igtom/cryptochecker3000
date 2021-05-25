@@ -1,9 +1,24 @@
-const URL = "https://api.nomics.com/v1/currencies/ticker?key=your-api-key&ids=BTC,ETH,DOGE,ADA,USDT,BNB&interval=1d,30d&convert=EUR&per-page=100&page=1";
+const URL = "https://api.nomics.com/v1/currencies/ticker?key=54db4c91ba3ea5fe94e9e19ad98226e16b43265b&ids="
 const result  = document.querySelector('.result');
+const form = document.querySelector('form');
+const input = document.querySelector('input');
 
+form.addEventListener('submit', formSubmitted);
 
-async function getCoins() {
-    let response = await fetch(URL)
+function formSubmitted(event) {
+    event.preventDefault();
+    let searchTerm = input.value;
+    searchTerm = searchTerm.toUpperCase();
+    searchStart();
+    getCoins(searchTerm)
+}
+
+const searchStart = () => {
+    result.innerHTML = '';
+}
+
+const getCoins = async searchTerm => {
+    let response = await fetch(`${URL}${searchTerm}&interval=1d,30d&convert=EUR&per-page=100&page=1`)
     let coins = await response.json()
     coins.forEach(coin => {
         const imageElement = document.createElement('img');
@@ -21,7 +36,7 @@ async function getCoins() {
     })
 }
 
-getCoins()
+
 
 
 

@@ -10,9 +10,14 @@ body {
     text-align: center;
   }
 
+h2 {
+    font-size: 30px;
+}
+
 h4 {
     background-color: #333;
     color: white;
+    font-size: 20px;
 }
 
 .result {

@@ -1,4 +1,4 @@
-const URL = "https://api.nomics.com/v1/currencies/ticker?key=54db4c91ba3ea5fe94e9e19ad98226e16b43265b&ids=BTC,ETH,DOGE,ADA,USDT,BNB&interval=1d,30d&convert=EUR&per-page=100&page=1";
+const URL = "https://api.nomics.com/v1/currencies/ticker?key=your-api-key&ids=BTC,ETH,DOGE,ADA,USDT,BNB&interval=1d,30d&convert=EUR&per-page=100&page=1";
 const result  = document.querySelector('.result');
 
 

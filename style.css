@@ -6,16 +6,30 @@ img {
     border-radius: 10px;
 }
 
+button {
+    color: white;
+    background-color: #155FE8;
+}
+
+button:hover {
+    background-color: white;
+    color: #155FE8;
+    transition: .5s;
+}
+
 body {
     text-align: center;
+    background-color: #333;
+    color: white;
   }
 
 h2 {
     font-size: 30px;
+    color: white;
 }
 
 h4 {
-    background-color: #333;
+    background-color: #155FE8;
     color: white;
     font-size: 20px;
 }
@@ -28,6 +42,7 @@ h4 {
 }
 
 .row {
-    background-color: wheat
+    background-color: #092B69;
+    border-radius: 20px;
 }
 

@@ -18,7 +18,7 @@ const searchStart = () => {
 }
 
 const getCoins = async searchTerm => {
-    let response = await fetch(`${URL}${searchTerm}&interval=1d,30d&convert=EUR&per-page=100&page=1`)
+    let response = await fetch(`${URL}${searchTerm}&interval=1d,30d&convert=EUR&per-page=200&page=1`)
     let coins = await response.json()
     coins.forEach(coin => {
         const imageElement = document.createElement('img');

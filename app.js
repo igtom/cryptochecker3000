@@ -1,4 +1,4 @@
-const URL = "https://api.nomics.com/v1/currencies/ticker?key=54db4c91ba3ea5fe94e9e19ad98226e16b43265b&ids="
+const URL = "https://api.nomics.com/v1/currencies/ticker?key=APIKEY&ids="
 const result  = document.querySelector('.result');
 const form = document.querySelector('form');
 const input = document.querySelector('input');
